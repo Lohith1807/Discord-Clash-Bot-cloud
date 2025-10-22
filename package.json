@@ -1,4 +1,11 @@
 {
+  "name": "discord-clash-bot",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy": "node src/utils/deploy-commands.js"
+  },
   "dependencies": {
     "axios": "^1.11.0",
     "cheerio": "^1.1.2",

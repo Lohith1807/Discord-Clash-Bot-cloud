@@ -1,6 +1,6 @@
 // handler.js
 
-const profile = require('./profile.js'); // adjust path if needed
+const profile = require('../commands/profile.js');
 
 async function handleInteraction(interaction) {
     // BUTTONS

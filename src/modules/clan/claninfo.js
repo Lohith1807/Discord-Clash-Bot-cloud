@@ -1,14 +1,14 @@
-const { cocApiToken } = require("./config.json");
+const { cocApiToken } = require("../../config/config.json");
 const COC_API_KEY = cocApiToken;
 // clan.js (Discord.js v14)
 const { EmbedBuilder } = require("discord.js");
 const fs = require("fs");
 const path = require("path");
 const https = require("https");
-const { getEmoji } = require("./emoji.js");
+const { getEmoji } = require("../../utils/emoji.js");
 
-const dataFile = path.join(__dirname, "clandata.json");
-const clanRoleFile = path.join(__dirname, "clanrole.json"); // ✅ new file path
+const dataFile = path.join(__dirname, "../../data/clandata.json");
+const clanRoleFile = path.join(__dirname, "../../data/clanrole.json");
 
 function loadData() {
   if (!fs.existsSync(dataFile)) return {};

@@ -18,6 +18,8 @@ const {
 const cheerio = require("cheerio");
 const axios = require("axios");
 const puppeteer = require("puppeteer");
+const { botToken } = require("./config/config.json");
+const handler = require("./utils/handler");
 const cron = require("node-cron");
 const path = require("path");
 const fs = require("fs");

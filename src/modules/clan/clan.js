@@ -1,5 +1,5 @@
-const { getEmoji } = require("./emoji.js");
-const { cocApiToken } = require("./config.json");
+const { getEmoji } = require("../../utils/emoji.js");
+const { cocApiToken } = require("../../config/config.json");
 // ⚔️ Your CoC API key
 const COC_API_KEY = cocApiToken;
 const { EmbedBuilder } = require("discord.js");

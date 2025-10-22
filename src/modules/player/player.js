@@ -1,5 +1,5 @@
 
-const { cocApiToken } = require("./config.json");
+const { cocApiToken } = require("../../config/config.json");
 // ⚠️ COC API token
 const COC_API_TOKEN = cocApiToken;
 const {
