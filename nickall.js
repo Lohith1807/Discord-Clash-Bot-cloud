@@ -25,8 +25,6 @@ const { getEmoji } = require("./emoji.js");
 const { handleInteraction } = require("./handler.js"); 
 const { cocApiToken } = require("./config.json");
 const COC_API_TOKEN = cocApiToken;
-
-const token = "REDACTED_DISCORD_TOKEN"; 
 const prefix = ";";
 
 const client = new Client({
