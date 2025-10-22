@@ -90,50 +90,47 @@ client.on("messageCreate", async (message) => {
 		} else if (commandName === "clansetupremove" || commandName === "crr") {
  		    const command = require("./modules/clan/clansetupremove.js");
     		await command.execute(message, args);
-		} else if (commandName === 'crinfo') {
-        	const command = require('./clanroleinfo.js');
+		} else if (commandName === 'allianceclans' || commandName === 'crinfo') {
+        	const command = require('./modules/clan/allianceclans.js');
         	command.execute(message, args);
     	} else if (commandName === 'player') {
-        	const command = require('./player.js');
+        	const command = require('./modules/player/player.js');
         	command.execute(message, args);
     	} else if (commandName === 'ls') {
-        	const command = require('./linkedlist.js');
-        	command.execute(message, args);
-    	} else if (commandName === 'cctest') {
-        	const command = require('./cctest.js');
+        	const command = require('./utils/linkedlist.js');
         	command.execute(message, args);
     	} else if (["linklead", "linkco", "unlead", "unco", "removeclan"].includes(commandName)) {
-            const command = require("./clanlink.js");
+            const command = require("./modules/clan/clanlink.js");
             await command.execute(client, message, args, commandName);
 
         } else if (["clan", "clans"].includes(commandName)) {
-            const command = require("./claninfo.js");
+            const command = require("./modules/clan/claninfo.js");
             await command.execute(client, message, args, commandName);
 
         } else if (commandName === "ahelp") {
-    		const { ahelp } = require("./help.js");
+    		const { ahelp } = require("./commands/help.js");
    			await ahelp.execute(message, args, client);
 
 		} else if (commandName === "help") {
-   			const { help } = require("./help.js");
+   			const { help } = require("./commands/help.js");
     	    await help.execute(message, args, client);
             
 		} else if (commandName === "ccc") {
-            const command = require("./ccc.js");
+            const command = require("./commands/ccc.js");
             await command.run(client, message, args);
 
         } else if (commandName === "delc") {
-            const command = require("./delc.js");
+            const command = require("./commands/delc.js");
             await command.run(client, message, args);
 
         } else if (commandName === "delete") {
-            const command = require("./delete.js");
+            const command = require("./commands/delete.js");
             await command.run(client, message, args);
         } else if (commandName === "cwl") {
-            const command = require("./cwl.js");
+            const command = require("./modules/war/cwl.js");
             await command.run(client, message, args);
         } else if (commandName === "compo") {
-            const command = require("./compo.js");
+            const command = require("./modules/war/compo.js");
             await command.execute(message, args);
         }
 
