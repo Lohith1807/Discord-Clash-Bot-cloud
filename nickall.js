@@ -110,4 +110,5 @@ client.on("messageCreate", async (message) => {
   }
 });
 
-client.login(token)
+// The bot login should be handled centrally (index.js). Do not login here.
+// client.login(token)

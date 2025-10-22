@@ -1,5 +1,7 @@
-const TOKEN = "REDACTED_DISCORD_TOKEN";
-const CLIENT_ID = "1403976210643685457";
+const { botToken, clientId } = require("./config.json");
+// Use values from config.json; keep config.json out of version control
+const TOKEN = botToken;
+const CLIENT_ID = clientId || "1403976210643685457";
 const { REST, Routes } = require('discord.js');
 const command = require('./setup.js');
 const GUILD_ID = '1153720899715993681';
