@@ -1,7 +1,7 @@
 const fs = require("fs");
 const { EmbedBuilder } = require("discord.js");
-const { getEmoji } = require('./emoji.js');  // <-- updated import
-const { cocApiToken } = require("./config.json");
+const { getEmoji } = require('../../utils/emoji.js');
+const { cocApiToken } = require("../../config/config.json");
 const token = cocApiToken;
 
 

@@ -1,5 +1,5 @@
 const { EmbedBuilder } = require("discord.js");
-const { getEmoji } = require("./emoji.js");
+const { getEmoji } = require("../../utils/emoji.js");
 module.exports = {
     name: 'war',
     description: 'Show instructions to calculate Clash of Clans war weight.',

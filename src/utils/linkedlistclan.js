@@ -1,4 +1,4 @@
-const { cocApiToken } = require("./config.json");
+const { cocApiToken } = require("../config/config.json");
 const COC_API_KEY = cocApiToken;
 
 const fs = require("fs");

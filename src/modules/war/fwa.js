@@ -1,5 +1,5 @@
 const { EmbedBuilder } = require("discord.js");
-const {getEmoji} = require("./emoji.js");
+const {getEmoji} = require("../../utils/emoji.js");
 const fwagem = getEmoji("whitefwa");
 const arrow = getEmoji("arrow");
 module.exports = {

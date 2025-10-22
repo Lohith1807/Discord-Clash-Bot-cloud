@@ -1,6 +1,6 @@
 const fs = require("fs");
 const { EmbedBuilder } = require("discord.js");
-const { getEmoji } = require('./emoji.js');  // updated import
+const { getEmoji } = require('../../utils/emoji.js');
 // 🔄 Load & Save User Data
 function loadUserData() {
     try {

@@ -1,6 +1,6 @@
 const { EmbedBuilder } = require("discord.js");
 const cheerio = require("cheerio");
-const { getEmoji } = require('./emoji.js');
+const { getEmoji } = require('../../utils/emoji.js');
 
 async function fwaClanData(tag) {
     const url = `https://fwastats.com/Clan/${tag.replace("#", "")}/Members.json`;

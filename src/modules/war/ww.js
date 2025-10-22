@@ -1,5 +1,5 @@
 const fwaClanData = require("./fwadata.js");
-const { getEmojiObject } = require("./emoji.js");
+const { getEmojiObject } = require("../../utils/emoji.js");
 
 module.exports = {
   name: "ww",

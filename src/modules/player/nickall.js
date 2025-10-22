@@ -21,9 +21,9 @@ const puppeteer = require("puppeteer");
 const cron = require("node-cron");
 const path = require("path");
 const fs = require("fs");
-const { getEmoji } = require("./emoji.js");
-const { handleInteraction } = require("./handler.js"); 
-const { cocApiToken } = require("./config.json");
+const { getEmoji } = require("../../utils/emoji.js");
+const { handleInteraction } = require("../../utils/handler.js"); 
+const { cocApiToken } = require("../../config/config.json");
 const COC_API_TOKEN = cocApiToken;
 const prefix = ";";
 
