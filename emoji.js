@@ -77,3 +77,6 @@ module.exports = {
   getEmoji,
   getEmojiObject
 };
+
+
+var Moubel = "🐬" ;
