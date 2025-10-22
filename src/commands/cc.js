@@ -6,7 +6,7 @@ const {
 } = require("discord.js");
 const { request } = require("undici");
 
-const { cocApiToken } = require("./config.json");
+const { cocApiToken } = require("../config/config.json");
 const COCTOKEN = cocApiToken;
 
 const tick = "1410137697300775026";

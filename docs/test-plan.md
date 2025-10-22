@@ -24,6 +24,10 @@ Each command should be tested individually:
 - [ ] /profile
 - [ ] /role
 - [ ] /sync
+- [ ] /cc (Clash of Clans command)
+- [ ] /ccc (Extended CoC functionality)
+- [ ] /delete-channel
+- [ ] /delete
 
 ## 5. Core Functionality
 ### Clan Module
