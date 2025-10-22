@@ -2,8 +2,8 @@
 const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require("discord.js");
 const fs = require("fs");
 const https = require("https");
-const {getEmoji} = require('./emoji.js')
-const { cocApiToken } = require("./config.json");
+const {getEmoji} = require('../../utils/emoji.js')
+const { cocApiToken } = require("../../config/config.json");
 const COC_API_KEY = cocApiToken;
 const COC_API_URL = "https://api.clashofclans.com/v1/clans/";
 

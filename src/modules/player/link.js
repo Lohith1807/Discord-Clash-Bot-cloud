@@ -8,7 +8,7 @@ const token = cocApiToken;
 // Load user data from JSON
 function loadUserData() {
     try {
-        const raw = fs.readFileSync("userdata.json", "utf8");
+        const raw = fs.readFileSync(path.join(__dirname, "../../data/userdata.json"), "utf8");
         return raw ? JSON.parse(raw) : {};
     } catch {
         return {};
@@ -17,7 +17,7 @@ function loadUserData() {
 
 // Save user data back to JSON
 function saveUserData(data) {
-    fs.writeFileSync("userdata.json", JSON.stringify(data, null, 2));
+    fs.writeFileSync(path.join(__dirname, "../../data/userdata.json"), JSON.stringify(data, null, 2));
 }
 
 module.exports = {

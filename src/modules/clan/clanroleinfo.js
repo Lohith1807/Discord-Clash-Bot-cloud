@@ -3,7 +3,7 @@ const path = require('path');
 const { EmbedBuilder } = require('discord.js');
 const cc = "1410138154484240424";
 const ccEmoji = `<:clancastle:${cc}>`;
-const { cocApiToken } = require("./config.json");
+const { cocApiToken } = require("../../config/config.json");
 // Clash of Clans API Key (keep this secure)
 const COC_API_KEY = cocApiToken; // loaded from config.json
 

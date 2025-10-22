@@ -67,28 +67,28 @@ client.on("messageCreate", async (message) => {
 
     try {
         if (commandName === "link") {
-            const command = require("./link.js");
+            const command = require("./commands/link.js");
             await command.execute(message, args);
 
         } else if (commandName === "profile" || commandName === "p") {
-            const command = require("./profile.js");
+            const command = require("./commands/profile.js");
             await command.execute(message, args);
 
         } else if (commandName === "unlink") {
-            const command = require("./unlink.js");
+            const command = require("./commands/unlink.js");
             await command.execute(message, args);
 
         } else if (commandName === "cc" || commandName === "check") {
-            const command = require("./cc.js");
+            const command = require("./commands/cc.js");
             await command.execute(message, args);
         } else if (commandName === "ww") {
- 		    const command = require("./ww.js");
+ 		    const command = require("./modules/war/ww.js");
     		await command.execute(message, args);
 		} else if (commandName === "cr") {
- 		    const command = require("./role.js");
+ 		    const command = require("./commands/role.js");
     		await command.execute(message, args);
 		} else if (commandName === "crr") {
- 		    const command = require("./crr.js");
+ 		    const command = require("./modules/war/crr.js");
     		await command.execute(message, args);
 		} else if (commandName === 'crinfo') {
         	const command = require('./clanroleinfo.js');

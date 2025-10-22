@@ -49,8 +49,8 @@ module.exports = {
         let cleanTag, playerName;
         const mentionedUser = message.mentions.users.first();
         const targetUser = mentionedUser || message.author;
-        const userdata = JSON.parse(fs.readFileSync("./userdata.json", "utf8"));
-        const clanroles = JSON.parse(fs.readFileSync("./clanrole.json", "utf8"));
+        const userdata = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/userdata.json"), "utf8"));
+        const clanroles = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/clanrole.json"), "utf8"));
 
         if (mentionedUser) {
             const linkedAccounts = userdata[mentionedUser.id];

@@ -1,6 +1,6 @@
 const fs = require("fs");
 const { EmbedBuilder } = require("discord.js");
-const emojis = require("./emoji.js");
+const emojis = require("../../utils/emoji.js");
 
 // ✅ Only users with these roles can use this command
 const ALLOWED_ROLES = [
