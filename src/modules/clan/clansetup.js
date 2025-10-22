@@ -1,6 +1,7 @@
 const fs = require("fs");
+const path = require("path");
 const { EmbedBuilder } = require("discord.js");
-const emojis = require('./emoji.js');
+const emojis = require('../../utils/emoji.js');
 
 // Allowed roles that can use this command
 const ALLOWED_ROLES = ["1397128468461916282", "1153997630112792577"]; 
@@ -65,7 +66,7 @@ module.exports = {
         // Load clanrole.json
         let clanroles = {};
         try {
-            clanroles = JSON.parse(fs.readFileSync("./clanrole.json", "utf8"));
+            clanroles = JSON.parse(fs.readFileSync(path.join(__dirname, "../../data/clanrole.json"), "utf8"));
         } catch (err) {
             clanroles = {};
         }
@@ -77,7 +78,7 @@ module.exports = {
             ...(nickName && { nickName }) // only add nickname if provided
         };
 
-        fs.writeFileSync("./clanrole.json", JSON.stringify(clanroles, null, 2));
+        fs.writeFileSync(path.join(__dirname, "../../data/clanrole.json"), JSON.stringify(clanroles, null, 2));
 
         const embed = buildEmbed(
             `✅ Clan **${clanTag}** is now linked to:\n` +

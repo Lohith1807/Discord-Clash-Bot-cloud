@@ -84,11 +84,11 @@ client.on("messageCreate", async (message) => {
         } else if (commandName === "ww") {
  		    const command = require("./modules/war/ww.js");
     		await command.execute(message, args);
-		} else if (commandName === "cr") {
- 		    const command = require("./commands/role.js");
+		} else if (commandName === "clansetup" || commandName === "cr") {
+ 		    const command = require("./modules/clan/clansetup.js");
     		await command.execute(message, args);
-		} else if (commandName === "crr") {
- 		    const command = require("./modules/war/crr.js");
+		} else if (commandName === "clansetupremove" || commandName === "crr") {
+ 		    const command = require("./modules/clan/clansetupremove.js");
     		await command.execute(message, args);
 		} else if (commandName === 'crinfo') {
         	const command = require('./clanroleinfo.js');

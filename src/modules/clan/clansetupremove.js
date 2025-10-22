@@ -67,7 +67,7 @@ module.exports = {
     // 📁 Load clanrole.json
     let clanroles = {};
     try {
-      clanroles = JSON.parse(fs.readFileSync("./clanrole.json", "utf8"));
+      clanroles = JSON.parse(fs.readFileSync(path.join(__dirname, "../../data/clanrole.json"), "utf8"));
     } catch (err) {
       const embed = buildEmbed(
         "⚠️ File Missing",
@@ -89,7 +89,7 @@ module.exports = {
 
     // 🗑️ Delete entry
     delete clanroles[clanTag];
-    fs.writeFileSync("./clanrole.json", JSON.stringify(clanroles, null, 2));
+    fs.writeFileSync(path.join(__dirname, "../../data/clanrole.json"), JSON.stringify(clanroles, null, 2));
 
     // ✅ Success message
     const embed = buildEmbed(
