@@ -18,14 +18,13 @@ const {
 const cheerio = require("cheerio");
 const axios = require("axios");
 const puppeteer = require("puppeteer");
-const { botToken } = require("./config/config.json");
+const { botToken, cocApiToken } = require("./config/config.json");
 const handler = require("./utils/handler");
 const cron = require("node-cron");
 const path = require("path");
 const fs = require("fs");
-const { getEmoji } = require("./emoji.js");
-const { handleInteraction } = require("./handler.js"); 
-const { cocApiToken, botToken } = require("./config.json");
+const { getEmoji } = require("./utils/emoji.js");
+const { handleInteraction } = require("./utils/handler.js"); 
 const COC_API_TOKEN = cocApiToken;
 
 const token = botToken;
